@@ -1,41 +1,43 @@
-@import url("reset.css")
+@import url("reset.css");
 
-p, li, h1 {
-    color : red;
-    width: 500px;
-    border: 1px solid black;
-}
+
 
 a {
     color: black;
 }
 
 a:hover {
-    color: blue;
 }
 
 html {
-    background-color: #00539F;
+    background-color: black;
     }
 
 body {
-  width: 600px;
-  margin: 0 auto;
-  background-color: #FF9500;
-  padding: 0 20px 20px 20px;
-  border: 5px solid black;
-}
-
-h1 {
-  margin: 0;
-  padding: 20px 0;
-  color: #00539F;
-  text-shadow: 3px 3px 1px black;
 }
 
 
-img {
-  display: block;
-  margin: 0 auto;
-  width: 300px;
+#top-nav-bar{
+  position: absolute;
+  background-color: gray;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+
+.items-on-bar{
+  list-style-type: none; /* deletes the bullet points */
+  margin: 0 0 0 0;
+  padding: 0px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  float:right
 }
