@@ -21,23 +21,77 @@ body {
   position: absolute;
   background-color: gray;
   top: 0;
-  right: 0;
   width: 100%;
+  font-family: 'Cairo', sans-serif;
+
   padding: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-end;
-
+  justify-content: space-around;
+  align-items: stretch;
 }
 
+#name-on-bar{
+  margin: auto auto auto 20px;
+  font-size: 40px;
+  border-color: green;
+  border-width: 5px;
+  border-style: dashed;
+  padding: 10px 5px 10px 5px;
+  flex: 4 2 10%;
+}
+
+
+
 .items-on-bar{
+  margin: auto;
+  padding: 10px;
   list-style-type: none; /* deletes the bullet points */
-  margin: 0 0 0 0;
-  padding: 0px;
-  
+  flex:2 1 20%;
+
+  border-color: green;
+  border-width: 5px;
+  border-style: dashed;
+
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  float:right
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-style: solid;
+  align-items: center;
+  order: 1;
+}
+
+.list-bar-item{
+  font-size: 25px;
+}
+
+.list-bar-item:hover{
+  color: red;
+}
+#buttons-on-bar{
+  margin: 1px;
+  padding: 5px 2px 5px 2px;
+  flex:0.5 0.5 10px;
+
+  border-color: green;
+  border-width: 5px;
+  border-style: dashed;
+
+  align-self: center;
+  order: 2;
+  display: flex;  
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.bar-button{
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 3px 2px;
+  cursor: pointer;
+ 
 }
