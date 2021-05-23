@@ -4,30 +4,36 @@
 
 a {
     color: black;
+    text-decoration: none;
 }
 
 a:hover {
+  color: rgba(47, 113, 39, 0.831)
 }
 
 
 
 body {
   background-color: black;
+  font-family: 'Noto Serif JP', serif;
+  min-height: 90vh;
   
 }
 
-h1, h2 {
-  font-size: 50px;  
+h1 {
+  font-size: 7vw;  
   color: white;
 }
 
 h2{
-  color: green;
+  font-size: 5vw;
+  color: rgb(189, 249, 186);
 }
 
 main {
+  position: relative;
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   margin: 10vh auto 10vh auto;
   
   display: flex;
@@ -39,7 +45,7 @@ main {
 
 #top-nav-bar{
   position: fixed;
-  background-color: gray;
+  background-color: lightgray;
   top: 0;
   width: 100%;
   font-family: 'Cairo', sans-serif;
@@ -53,18 +59,18 @@ main {
 
 #name-on-bar{
   margin: auto auto auto 20px;
-  font-size: 40px;
+  font-size: 4vw;
   padding: 10px 5px 10px 5px;
-  flex: 5 4 10%;
+  flex: 6 1 20%;
 }
 
 
 
 .items-on-bar{
   margin: auto;
-  padding: 10px;
+  padding: 5px;
   list-style-type: none; /* deletes the bullet points */
-  flex:3 2 20%;
+  flex:3 4 30%;
 
   display: flex;
   align-items: center;
@@ -76,18 +82,20 @@ main {
 }
 
 .list-bar-item{
-  font-size: 25px;
+  font-size: 2vw;
   align-self: stretch;
   padding: 8px;
-  margin: auto;
+  margin: 5px;
   border-radius: 10%;
   border-style: solid;
   border-width: 2px;
 }
 
 .list-bar-item:hover{
-  color: red;
+color: rgba(47, 113, 39, 0.831);
+box-shadow: 1px 1px 5px;
 }
+
 #buttons-on-bar{
   margin: auto;
   padding: 5px 1px 5px 1px;
@@ -112,6 +120,14 @@ main {
  
 }
 
+#name-roles{
+  width: 90vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: space-around;  
+}
 
 #introduction-image{
   border-radius: 25%;
@@ -123,14 +139,11 @@ main {
 
 
 
-
-
 #footer{
-  position: fixed;
-  left: 0;
+  position: absolute;
   bottom: 0;
   width: 100%;
-  height: 5%;
+  height: 2.5rem;
   background-color: lightgray;
   color: green;
   text-align: center;
