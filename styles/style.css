@@ -9,16 +9,36 @@ a {
 a:hover {
 }
 
-html {
-    background-color: black;
-    }
+
 
 body {
+  background-color: black;
+  
+}
+
+h1, h2 {
+  font-size: 50px;  
+  color: white;
+}
+
+h2{
+  color: green;
+}
+
+main {
+  width: 100%;
+  height: 90vh;
+  margin: 10vh auto 10vh auto;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 
 #top-nav-bar{
-  position: absolute;
+  position: fixed;
   background-color: gray;
   top: 0;
   width: 100%;
@@ -34,11 +54,8 @@ body {
 #name-on-bar{
   margin: auto auto auto 20px;
   font-size: 40px;
-  border-color: green;
-  border-width: 5px;
-  border-style: dashed;
   padding: 10px 5px 10px 5px;
-  flex: 4 2 10%;
+  flex: 5 4 10%;
 }
 
 
@@ -47,11 +64,7 @@ body {
   margin: auto;
   padding: 10px;
   list-style-type: none; /* deletes the bullet points */
-  flex:2 1 20%;
-
-  border-color: green;
-  border-width: 5px;
-  border-style: dashed;
+  flex:3 2 20%;
 
   display: flex;
   align-items: center;
@@ -64,25 +77,28 @@ body {
 
 .list-bar-item{
   font-size: 25px;
+  align-self: stretch;
+  padding: 8px;
+  margin: auto;
+  border-radius: 10%;
+  border-style: solid;
+  border-width: 2px;
 }
 
 .list-bar-item:hover{
   color: red;
 }
 #buttons-on-bar{
-  margin: 1px;
-  padding: 5px 2px 5px 2px;
-  flex:0.5 0.5 10px;
-
-  border-color: green;
-  border-width: 5px;
-  border-style: dashed;
+  margin: auto;
+  padding: 5px 1px 5px 1px;
+  flex:1 1 5px;
 
   align-self: center;
   order: 2;
   display: flex;  
   justify-content: flex-end;
   align-items: stretch;
+  flex-wrap: wrap;
 }
 
 .bar-button{
@@ -94,4 +110,36 @@ body {
   margin: 3px 2px;
   cursor: pointer;
  
+}
+
+
+#introduction-image{
+  border-radius: 25%;
+  max-width: 80%;
+  max-height: 40%;
+  align-self: center;
+  justify-self: flex-start;
+}
+
+
+
+
+
+#footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  background-color: lightgray;
+  color: green;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+}
+
+.footer-logos{
+  height: 90%;
+  margin: 2px 30px 0px 2px;
 }
