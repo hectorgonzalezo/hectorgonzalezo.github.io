@@ -135,7 +135,7 @@ box-shadow: 1px 1px 5px;
 
 .footer-logos{
   height: 90%;
-  max-width: 10vw;
+  width: auto;
   margin: 2px 30px 0px 2px;
 }
 
