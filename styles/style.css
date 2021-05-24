@@ -16,8 +16,7 @@ a:hover {
 body {
   background-color: black;
   font-family: 'Noto Serif JP', serif;
-  min-height: 90vh;
-  
+  min-height: 80vh;
 }
 
 h1 {
@@ -26,14 +25,14 @@ h1 {
 }
 
 h2{
-  font-size: 5vw;
+  font-size: 4vw;
   color: rgb(189, 249, 186);
 }
 
 main {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 75vh;
   margin: 10vh auto 10vh auto;
   
   display: flex;
@@ -43,12 +42,14 @@ main {
 }
 
 
+
 #top-nav-bar{
   position: fixed;
   background-color: lightgray;
   top: 0;
   width: 100%;
   font-family: 'Cairo', sans-serif;
+  z-index: 100;
 
   padding: auto;
   display: flex;
@@ -60,6 +61,8 @@ main {
 #name-on-bar{
   margin: auto auto auto 20px;
   font-size: 6vw;
+  font-weight: bold;
+  font-style: italic;
   padding: 10px 5px 10px 5px;
   flex: 6 1 20%;
 }
@@ -96,29 +99,7 @@ color: rgba(47, 113, 39, 0.831);
 box-shadow: 1px 1px 5px;
 }
 
-#buttons-on-bar{
-  margin: auto;
-  padding: 5px 1px 5px 1px;
-  flex:1 1 5px;
 
-  align-self: center;
-  order: 2;
-  display: flex;  
-  justify-content: flex-end;
-  align-items: stretch;
-  flex-wrap: wrap;
-}
-
-.bar-button{
-  border: none;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  margin: 3px 2px;
-  cursor: pointer;
- 
-}
 
 #name-roles{
   width: 90vw;
@@ -131,8 +112,8 @@ box-shadow: 1px 1px 5px;
 
 #introduction-image{
   border-radius: 25%;
-  max-width: 80%;
-  max-height: 40%;
+  max-width: 60%;
+  max-height: 65%;
   align-self: center;
   justify-self: flex-start;
 }
@@ -140,7 +121,7 @@ box-shadow: 1px 1px 5px;
 
 
 #footer{
-  position: sticky; 
+  position: relative; 
   bottom: 0;
   width: 100%;
   height: 2.5rem;
@@ -155,4 +136,18 @@ box-shadow: 1px 1px 5px;
 .footer-logos{
   height: 90%;
   margin: 2px 30px 0px 2px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  main {
+    height: 53vh;
+    margin: 20vh auto 20vh auto;
+    
+  }
+
+  .list-bar-item{
+    padding: 5px;
+    margin: 3px;
+  }
 }
