@@ -99,6 +99,10 @@ color: rgba(47, 113, 39, 0.831);
 box-shadow: 1px 1px 5px;
 }
 
+#current-bar-item{
+    color: rgba(47, 113, 39, 0.831);
+    }
+
 
 
 #name-roles{
@@ -135,13 +139,22 @@ box-shadow: 1px 1px 5px;
 
 .footer-logos{
   height: 90%;
-  width: auto;
+  width: auto;  
   margin: 2px 30px 0px 2px;
 }
 
-#audios-div{
+#contact{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
+.contact-logos{
+  width: 8vw;
+  margin: 20px;
+}
 
 @media only screen and (max-width: 600px) {
   main {
