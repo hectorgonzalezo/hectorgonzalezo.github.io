@@ -213,6 +213,8 @@ box-shadow: 1px 1px 5px;
     margin-top: 100px;
     padding-top: 100px;
   }
+
+
 }
 
 #bios-div{
@@ -231,8 +233,8 @@ box-shadow: 1px 1px 5px;
   width: 40%;
 }
 
-#media-div{
-  margin-top: 10vw;
+.media-div{
+  margin-top: 5vw;
 
   display: flex;
   flex-direction: column;
