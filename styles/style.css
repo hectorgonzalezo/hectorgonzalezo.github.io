@@ -11,12 +11,30 @@ a:hover {
   color: rgba(47, 113, 39, 0.831)
 }
 
+h3, p {
+  color: white;
+  margin: 7px;
+  padding: 2px;
+}
+
+p{
+  font-size: 1em;
+  text-align: justify;
+  text-indent: 50px;
+  line-height: 1.3em;
+}
+
+h3{
+  font-size: 2em;
+  color:palegoldenrod;
+  text-align: center;
+}
 
 
 body {
   background-color: black;
   font-family: 'Noto Serif JP', serif;
-  min-height: 80vh;
+  min-height: 90vh;
 }
 
 h1 {
@@ -32,8 +50,10 @@ h2{
 main {
   position: relative;
   width: 100%;
-  height: 75vh;
-  margin: 10vh auto 10vh auto;
+  height: 85vh;
+  margin: 10% auto 15vh auto;
+  padding-top: 2vh;
+  padding-bottom: 150px;
   
   display: flex;
   flex-direction: column;
@@ -53,7 +73,7 @@ main {
 
   padding: auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: stretch;
 }
@@ -78,7 +98,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   border-style: solid;
   align-items: center;
   order: 1;
@@ -122,10 +142,15 @@ box-shadow: 1px 1px 5px;
   justify-self: flex-start;
 }
 
+#picture{
+  margin-top: max(7vw, 280px);
+  max-width: 60%;
+  max-height: 65%;
+}
 
 
 #footer{
-  position: relative; 
+  position: fixed; 
   bottom: 0;
   width: 100%;
   height: 2.5rem;
@@ -156,15 +181,40 @@ box-shadow: 1px 1px 5px;
   margin: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   main {
     height: 53vh;
     margin: 20vh auto 20vh auto;
     
   }
 
+  #name-on-bar{
+    margin: auto auto auto 5px;
+  }
+
   .list-bar-item{
     padding: 5px;
     margin: 3px;
   }
+
+  #picture{
+    margin-top: max(30vw, 500px);
+    padding-top: 100px;
+  }
+}
+
+#bios-div{
+  margin: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.bio-div{
+  flex: 1 1 300px;
+  margin: 10px;
+  padding: 10px;
+  width: 40%;
 }
