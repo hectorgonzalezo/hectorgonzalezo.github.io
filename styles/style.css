@@ -13,10 +13,21 @@ a:hover {
 
 h3, p {
   color: white;
-  margin: 7px;
-  padding: 2px;
+  margin: 5px;
+  padding: 1px;
+  letter-spacing: normal;
 }
 
+.title{
+  font-style: italic;
+}
+
+h4{
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 10px;
+}
 p{
   font-size: 1em;
   text-align: justify;
@@ -51,7 +62,7 @@ main {
   position: relative;
   width: 100%;
   height: 85vh;
-  margin: 10% auto 15vh auto;
+  margin: 10% auto auto auto;
   padding-top: 2vh;
   padding-bottom: 150px;
   
@@ -143,9 +154,9 @@ box-shadow: 1px 1px 5px;
 }
 
 #picture{
-  margin-top: max(7vw, 280px);
+  margin-top: 120px;
   max-width: 60%;
-  max-height: 65%;
+  max-height: 50%;
 }
 
 
@@ -169,19 +180,20 @@ box-shadow: 1px 1px 5px;
 }
 
 #contact{
+  margin-top: 200px;
+  padding: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
-.contact-logos{
-  width: 8vw;
-  margin: 20px;
-}
 
 @media only screen and (max-width: 800px) {
+  p{
+    font-size: 0.8em;
+  }
   main {
     height: 53vh;
     margin: 20vh auto 20vh auto;
@@ -198,7 +210,7 @@ box-shadow: 1px 1px 5px;
   }
 
   #picture{
-    margin-top: max(30vw, 500px);
+    margin-top: 100px;
     padding-top: 100px;
   }
 }
@@ -217,4 +229,29 @@ box-shadow: 1px 1px 5px;
   margin: 10px;
   padding: 10px;
   width: 40%;
+}
+
+#media-div{
+  margin-top: 10vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.videos{
+  margin: 50px;
+}
+
+.audios{
+  padding: 8vw;
+  width: 80%;
+  height: 10%;
+}
+
+#email-logo{
+  width: 70%;
+  padding: 0px;
+  margin: 0px;
 }
