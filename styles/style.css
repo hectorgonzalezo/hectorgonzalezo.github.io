@@ -55,6 +55,7 @@ h1 {
 
 h2{
   font-size: 4vw;
+  margin: 10px;
   color: rgb(189, 249, 186);
 }
 
@@ -180,13 +181,14 @@ box-shadow: 1px 1px 5px;
 }
 
 #contact{
-  margin-top: 200px;
   padding: 0;
+  height: 50vh;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 
@@ -213,8 +215,6 @@ box-shadow: 1px 1px 5px;
     margin-top: 100px;
     padding-top: 100px;
   }
-
-
 }
 
 #bios-div{
