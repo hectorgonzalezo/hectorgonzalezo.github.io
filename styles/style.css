@@ -61,11 +61,27 @@ h2{
 
 main {
   position: relative;
+  top: 50px;
   width: 100%;
-  height: 85vh;
-  margin: 10% auto auto auto;
-  padding-top: 2vh;
-  padding-bottom: 150px;
+  height: 70vh;
+  margin: 7% auto auto auto;
+  padding-top: 1vh;
+  padding-bottom: 50px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#bio-main {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 70vh;
+  margin: 1vh auto auto auto;
+  padding-top: 1vh;
+  padding-bottom: 50px;
   
   display: flex;
   flex-direction: column;
@@ -139,7 +155,8 @@ box-shadow: 1px 1px 5px;
 
 #name-roles{
   width: 90vw;
-  height: 30vh;
+  height: 15vh;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column; 
   align-items: center;
@@ -155,7 +172,8 @@ box-shadow: 1px 1px 5px;
 }
 
 #picture{
-  margin-top: 120px;
+  position: relative;
+  top: 100px;
   max-width: 60%;
   max-height: 50%;
 }
@@ -198,8 +216,13 @@ box-shadow: 1px 1px 5px;
   }
   main {
     height: 53vh;
-    margin: 20vh auto 20vh auto;
+    margin: 15vh auto 5vh auto;
     
+  }
+
+  #bio-main{
+    height: 53vh;
+    margin: 170px auto 5vh auto; 
   }
 
   #name-on-bar{
@@ -219,6 +242,7 @@ box-shadow: 1px 1px 5px;
 
 #bios-div{
   margin: 40px;
+  padding-top: 70px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
