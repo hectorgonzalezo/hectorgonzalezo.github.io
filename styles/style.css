@@ -173,7 +173,7 @@ box-shadow: 1px 1px 5px;
 
 #picture{
   position: relative;
-  top: 100px;
+  top: 12vh;
   max-width: 60%;
   max-height: 50%;
 }
@@ -225,6 +225,7 @@ box-shadow: 1px 1px 5px;
     margin: 130px auto 5vh auto; 
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   #name-on-bar{
@@ -237,7 +238,7 @@ box-shadow: 1px 1px 5px;
   }
 
   #picture{
-    margin: 100px auto auto auto;
+    margin: 5vh auto auto auto;
     padding-top: 100px;
   }
 }
