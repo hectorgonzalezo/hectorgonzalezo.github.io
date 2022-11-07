@@ -5,9 +5,9 @@ function Header() {
   return(
       <nav>
         <ul>
-          <li>About Me</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
   )

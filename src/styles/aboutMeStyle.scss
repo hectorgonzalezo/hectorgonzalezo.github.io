@@ -1,7 +1,50 @@
 #about-me{
-  display: flex;
-  flex-direction: column;
+  min-height: 100vh;
+  display: grid;
   align-items: center;
-  justify-content: center;
-  margin-top: 60px;
+  justify-items: center;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 100px 1fr 1fr;
+  padding: 20px;
+  column-gap: clamp(5px, 3vw, 50px); 
+  grid-template-areas: 
+            "img name"
+            "img desc"
+            "tools tools";
+  outline: 1px solid red;
+  
+  & > img{
+    width: clamp(100px, 33vw, 200px);
+    grid-area: img;
+    justify-self: end;
+    border-radius: 2rem;
+  }
+
+  & > h1{
+    grid-area: name;
+    justify-self: start;
+  }
+  & > p{
+    grid-area: desc;
+    justify-self: start;
+  }
+  ul {
+    grid-area: tools;
+    display: grid;
+    gap: 10px;
+    width: min(800px, 100%);
+    li {
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 20px;
+    }
+    i{
+      font-size: 10rem;
+    }
+    img{
+      width: clamp(36px, 8vw, 64px)
+    }
+
+  }
 }

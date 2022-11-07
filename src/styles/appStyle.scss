@@ -48,8 +48,9 @@ $gradient-radial: radial-gradient(#3f3f42ff, #444441ff, #494940ff, #4e4e3fff, #5
 
 .App{
   background-color: $black-olive;
-  min-height: 100vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
   h1{
     font-size: 2rem;
   }
@@ -57,8 +58,11 @@ $gradient-radial: radial-gradient(#3f3f42ff, #444441ff, #494940ff, #4e4e3fff, #5
   h2{
     font-size: 1.5rem;
   }
-}
 
+}
+.devicon-devicon-plain {
+  max-width: 2em;
+}
 
 #about-me{
   height: 100vh;
