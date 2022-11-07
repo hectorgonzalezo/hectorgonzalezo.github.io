@@ -1,0 +1,20 @@
+.App > div:first-child {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  h1{
+    font-size: 3rem;
+    -webkit-animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  h2{
+    font-size: 2rem;
+    -webkit-animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: text-pop-up-top 2s 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+}

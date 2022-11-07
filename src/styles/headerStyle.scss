@@ -1,0 +1,16 @@
+@import './appStyle.scss';
+
+nav{
+  background-color: $rifle-green;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0px;
+  height: 60px;
+  ul{
+    display: flex;
+    width: auto;
+    gap: 20px;
+    padding: 20px;
+  }
+}
