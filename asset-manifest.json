@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hectorgonzalezo.github.io/static/css/main.9329854a.css",
+    "main.js": "/hectorgonzalezo.github.io/static/js/main.b0c6b812.js",
+    "static/media/portrait.jpg": "/hectorgonzalezo.github.io/static/media/portrait.3ec78fd6f5d500c71cbe.jpg",
+    "index.html": "/hectorgonzalezo.github.io/index.html",
+    "static/media/mail-logo.svg": "/hectorgonzalezo.github.io/static/media/mail-logo.e3b8f018d99087be679f3fc6678cf1e9.svg",
+    "main.9329854a.css.map": "/hectorgonzalezo.github.io/static/css/main.9329854a.css.map",
+    "main.b0c6b812.js.map": "/hectorgonzalezo.github.io/static/js/main.b0c6b812.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9329854a.css",
+    "static/js/main.b0c6b812.js"
+  ]
+}
