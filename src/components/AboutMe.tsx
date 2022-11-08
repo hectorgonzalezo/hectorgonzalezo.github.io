@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { InView } from 'react-intersection-observer';
 import Portrait from '../assets/portrait.jpg';
 import Icon from './Icon';
 import '../styles/aboutMeStyle.scss';
 
 function AboutMe() {
+  const [visible, setVisible] = useState(false);
   return (
-    <section id="about-me">
+    <InView as="section" id="about-me" onChange={(inView : boolean) => setVisible(inView)}>
+      {visible ? 
+      <>
       <img src={Portrait} alt="Héctor González Orozco" />
       <h1><span>About Me</span></h1>
       <p>info</p>
@@ -77,7 +81,9 @@ function AboutMe() {
           </Icon>
         </li>
       </ul>
-    </section>
+      </>
+      : null}
+    </InView>
   );
 }
 
