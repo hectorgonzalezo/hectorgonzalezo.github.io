@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/hectorgonzalezo.github.io/static/css/main.aba4c375.css",
-    "main.js": "/hectorgonzalezo.github.io/static/js/main.3a6e3000.js",
-    "static/media/portrait.jpg": "/hectorgonzalezo.github.io/static/media/portrait.3ec78fd6f5d500c71cbe.jpg",
-    "index.html": "/hectorgonzalezo.github.io/index.html",
-    "static/media/mail-logo.svg": "/hectorgonzalezo.github.io/static/media/mail-logo.e3b8f018d99087be679f3fc6678cf1e9.svg",
-    "main.aba4c375.css.map": "/hectorgonzalezo.github.io/static/css/main.aba4c375.css.map",
-    "main.3a6e3000.js.map": "/hectorgonzalezo.github.io/static/js/main.3a6e3000.js.map"
+    "main.css": "/static/css/main.aba4c375.css",
+    "main.js": "/static/js/main.f17defe6.js",
+    "static/media/portrait.jpg": "/static/media/portrait.3ec78fd6f5d500c71cbe.jpg",
+    "index.html": "/index.html",
+    "static/media/mail-logo.svg": "/static/media/mail-logo.e3b8f018d99087be679f3fc6678cf1e9.svg",
+    "main.aba4c375.css.map": "/static/css/main.aba4c375.css.map",
+    "main.f17defe6.js.map": "/static/js/main.f17defe6.js.map"
   },
   "entrypoints": [
     "static/css/main.aba4c375.css",
-    "static/js/main.3a6e3000.js"
+    "static/js/main.f17defe6.js"
   ]
 }
