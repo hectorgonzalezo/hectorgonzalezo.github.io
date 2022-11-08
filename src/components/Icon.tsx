@@ -8,8 +8,8 @@ const Wrapper = styled.div`
   background-color: var(--dark-purple);
   padding: 25px;
   margin: 10px;
-  width: 50px;
-  height: 50px;
+  width: clamp(1.8rem, 7vw, 3rem);
+  height: clamp(1.8rem, 7vw, 3rem);
   font-size: 18px;
   display: flex;
   justify-content: center;
@@ -63,7 +63,7 @@ const Wrapper = styled.div`
 }
 
 img{
-  max-width: 64px
+  max-width: 58px
 }
 `;
 
@@ -74,7 +74,7 @@ interface IconProps {
 
 function Icon({ children, text } : IconProps) {
   return (
-    <Wrapper>
+    <Wrapper className="icon">
       <span className="tooltip">{text}</span>
       <span>{children}</span>
     </Wrapper>

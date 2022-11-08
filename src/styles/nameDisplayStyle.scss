@@ -15,10 +15,10 @@
   h2{
     font-size: 2rem;
     -webkit-animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: text-pop-up-top 2s 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: text-pop-up-top 2s 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
 
-  // span {
-  //   animation: bounce-in-bottom 2s 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  // }
+  span {
+    animation: bounce-in-bottom 2s 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
 }

@@ -3,6 +3,20 @@
     display: flex;
     gap: 25px;
     justify-self: stretch;
-    justify-content: space-around;
+    justify-content: space-evenly;
+  }
+
+  .icon {
+    opacity: 1;
+  }
+
+  .icon:first-child{
+    animation: bounce-in-bottom 1s;
+  }
+  .icon:nth-child(2){
+    animation: bounce-in-bottom 1.5s;
+  }
+  .icon:nth-child(3){
+    animation: bounce-in-bottom 2s;
   }
 }

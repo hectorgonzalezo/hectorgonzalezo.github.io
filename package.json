@@ -1,6 +1,7 @@
 {
   "name": "hectorgonzalezo.github.io",
   "version": "0.1.0",
+  "homepage": "https:/hectorgonzalezo.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -12,8 +13,11 @@
     "@types/react-dom": "^18.0.8",
     "devicon": "^2.15.1",
     "devicon-react-svg": "^0.2.3",
+    "eslint-config-prettier": "^8.5.0",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.4.0",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.6",
     "typescript": "^4.8.4",

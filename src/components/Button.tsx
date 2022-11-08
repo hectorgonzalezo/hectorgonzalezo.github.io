@@ -39,7 +39,7 @@ a:before{
 }
 a:after{
   color: white;
-  background: var(--space-cadet);
+  background: var(--dark-purple-2);
   transform: rotateX(90deg) translateZ(25px);
 }
 a:hover{

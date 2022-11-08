@@ -7,7 +7,7 @@ function AboutMe() {
   return (
     <section id="about-me">
       <img src={Portrait} alt="Héctor González Orozco" />
-      <h1><span>Héctor González Orozco</span></h1>
+      <h1><span>About Me</span></h1>
       <p>info</p>
       <ul>
         <li>
