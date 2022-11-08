@@ -7,9 +7,7 @@
             "name name"
             "img desc"
             "tools tools";
-  *:not(span){
-    animation: fade-in 2s;
-  }
+
   
   & > img{
     width: clamp(100px, 33vw, 200px);

@@ -8,12 +8,12 @@
   gap: 30px;
 
   h1{
-    font-size: 3rem;
+    font-size: clamp(3rem, 6vw, 5rem);
     -webkit-animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
   h2{
-    font-size: 2rem;
+    font-size: clamp(2rem, 4vw, 3rem);
     -webkit-animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: text-pop-up-top 2s 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }

@@ -1,4 +1,12 @@
 #contact {
+  background-color: var(--skobeloff);
+  h1 {
+    border-bottom: 2px solid var(--space-cadet);
+    z-index: 1;
+     span {
+      background-color: inherit; 
+     }
+  }
   & > div {
     display: flex;
     gap: 25px;
@@ -6,17 +14,30 @@
     justify-content: space-evenly;
   }
 
+  .arrow {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    z-index: 0;
+    width: auto; 
+    transform: translate(-50%);
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    
+    border-top: 30vh solid var(--space-cadet);
+  }
+
   .icon {
     opacity: 1;
   }
 
   .icon:first-child{
-    animation: bounce-in-bottom 1s;
+    animation: bounce-in-bottom 2s ;
   }
   .icon:nth-child(2){
-    animation: bounce-in-bottom 1.5s;
+    animation: bounce-in-bottom 2.5s ;
   }
   .icon:nth-child(3){
-    animation: bounce-in-bottom 2s;
+    animation: bounce-in-bottom 3s ;
   }
 }

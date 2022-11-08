@@ -11,9 +11,10 @@ function Contact() {
   const [visible, setVisible] = useState(false);
   return (
     <InView as="section" onChange={(inView) => setVisible(inView)} id="contact">
-        <h1><span>Contact</span></h1>
+      <div className="arrow"/>
         {visible ?
         <>
+        <h1><span>Contact</span></h1>
         <div>
         <Icon text="Github">
           <a href="https://github.com/hectorgonzalezo">

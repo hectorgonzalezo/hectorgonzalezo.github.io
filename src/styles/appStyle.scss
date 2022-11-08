@@ -31,27 +31,30 @@ button {
 
 section{
   min-height: calc(100vh - 80px);
+  position: relative;
   padding: 20px;
-  // padding-top: 90px;
   display: grid;
   align-items: center;
   justify-items: center;
+  *:not(span){
+    animation: fade-in 2s ease-in;
+  }
 
   h1{
     font-size: 4rem;
-  width: 100%; 
-  text-align: center; 
-  border-bottom: 2px solid var(--skobeloff);
-  line-height: 0.1em;
-  margin: 10px 0 20px; 
-} 
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 2px solid var(--skobeloff);
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+  } 
 
-h1 span { 
-   background: var(--space-cadet);
-   padding:0 10px;
-   word-wrap:break-word;
-   white-space: normal;
-}
+  h1 span { 
+    background: var(--space-cadet);
+    padding:0 10px;
+    word-wrap:break-word;
+    white-space: normal;
+  }
 }
 
 
