@@ -1,53 +1,16 @@
 @import './reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+@import './animations.scss';
 
 :root {
-  /* CSS HEX */
-  --onyx: #3f3f42ff;
-  --black-olive: #444441ff;
-  --black-olive-2: #494940ff;
-  --rifle-green: #4e4e3fff;
-  --rifle-green-2: #53533eff;
-  --rifle-green-3: #58583dff;
-  --army-green: #5d5d3cff;
-  
 
   color: white;
   font-size: clamp(13px, 2vw, 16px);
   font-family: 'Lora', serif;
 }
 
-/* SCSS HEX */
-$onyx: #3f3f42ff;
-$black-olive: #444441ff;
-$black-olive-2: #494940ff;
-$rifle-green: #4e4e3fff;
-$rifle-green-2: #53533eff;
-$rifle-green-3: #58583dff;
-$army-green: #5d5d3cff;
-
-$onyx: hsla(240, 2%, 25%, 1);
-$black-olive: hsla(60, 2%, 26%, 1);
-$black-olive-2: hsla(60, 7%, 27%, 1);
-$rifle-green: hsla(60, 11%, 28%, 1);
-$rifle-green-2: hsla(60, 14%, 28%, 1);
-$rifle-green-3: hsla(60, 18%, 29%, 1);
-$army-green-opaque: hsla(60, 22%, 30%, 0.5);
-
-
-/* SCSS Gradient */
-$gradient-top: linear-gradient(0deg, #3f3f42ff, #444441ff, #494940ff, #4e4e3fff, #53533eff, #58583dff, #5d5d3cff);
-$gradient-right: linear-gradient(90deg, #3f3f42ff, #444441ff, #494940ff, #4e4e3fff, #53533eff, #58583dff, #5d5d3cff);
-$gradient-bottom: linear-gradient(180deg, #3f3f42ff, #444441ff, #494940ff, #4e4e3fff, #53533eff, #58583dff, #5d5d3cff);
-$gradient-left: linear-gradient(270deg, #3f3f42ff, #444441ff, #494940ff, #4e4e3fff, #53533eff, #58583dff, #5d5d3cff);
-$gradient-top-right: linear-gradient(45deg, #3f3f42ff, #444441ff, #494940ff, #4e4e3fff, #53533eff, #58583dff, #5d5d3cff);
-$gradient-bottom-right: linear-gradient(135deg, #3f3f42ff, #444441ff, #494940ff, #4e4e3fff, #53533eff, #58583dff, #5d5d3cff);
-$gradient-top-left: linear-gradient(225deg, #3f3f42ff, #444441ff, #494940ff, #4e4e3fff, #53533eff, #58583dff, #5d5d3cff);
-$gradient-bottom-left: linear-gradient(315deg, #3f3f42ff, #444441ff, #494940ff, #4e4e3fff, #53533eff, #58583dff, #5d5d3cff);
-$gradient-radial: radial-gradient(#3f3f42ff, #444441ff, #494940ff, #4e4e3fff, #53533eff, #58583dff, #5d5d3cff);
-
 .App{
-  background-color: $black-olive;
+  background-color: $space-cadet;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -60,50 +23,27 @@ $gradient-radial: radial-gradient(#3f3f42ff, #444441ff, #494940ff, #4e4e3fff, #5
   }
 
 }
-.devicon-devicon-plain {
-  max-width: 2em;
+
+a {
+  text-decoration-line: none;
 }
 
-#about-me{
+button {
+  border: none;
+  border-radius: 16px;
+  padding: 5px 10px 5px 10px;
+  font-size: 1.2rem;
+  outline: 3px solid $english-violet;
+}
+
+section{
   height: 100vh;
 }
+
+
+
 
 .text-pop-up-top {
 	-webkit-animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-@-webkit-keyframes text-pop-up-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    text-shadow: none;
-  }
-  100% {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    text-shadow:  0 1px 3px $onyx, 0 9px 9px black;
-  }
-}
-@keyframes text-pop-up-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    text-shadow: none;
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    text-shadow:  0 1px 3px $onyx, 0 9px 9px black;
-    opacity: 1;
-  }
 }

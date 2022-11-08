@@ -1,16 +1,16 @@
 @import './appStyle.scss';
 
 nav{
-  background-color: $rifle-green;
+  background-color: $skobeloff;
   display: flex;
   justify-content: flex-end;
   position: sticky;
   top: 0px;
-  height: 60px;
+  min-height: 80px;
   ul{
     display: flex;
     width: auto;
     gap: 20px;
-    padding: 20px;
+    padding: 15px;
   }
 }

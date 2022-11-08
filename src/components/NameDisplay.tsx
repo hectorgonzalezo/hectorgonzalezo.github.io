@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './Button';
 import '../styles/nameDisplayStyle.scss';
 
 function NameDisplay() {
@@ -6,9 +7,7 @@ function NameDisplay() {
     <div>
       <h1>Héctor González Orozco</h1>
       <h2>Full-stack web developer</h2>
-      <button type="button">
-        <a href="#about-me">Know more about me ↓</a>
-      </button>
+      <Button text="Know more about me ↓" href="#about-me" />
     </div>
   );
 }
