@@ -2,9 +2,10 @@
   background-color: var(--skobeloff);
   h1 {
     border-bottom: 2px solid var(--space-cadet);
+    align-self: end;
     z-index: 1;
      span {
-      background-color: inherit; 
+      background-color: var(--skobeloff); 
      }
   }
   & > div {
@@ -24,7 +25,7 @@
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
     
-    border-top: 30vh solid var(--space-cadet);
+    border-top: 20vh solid var(--space-cadet);
   }
 
   .icon {

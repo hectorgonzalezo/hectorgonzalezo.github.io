@@ -56,14 +56,14 @@ interface ButtonProps {
 
 function Button({ text, href, small } : ButtonProps) {
   return (
-    <StyledButton text={text} small={small}>
+    <StyledButton text={text} small={small} className="button">
       <a href={href} aria-label={text} />
     </StyledButton>
   )
 }
 
 Button.defaultProps = {
-  small: false,
+  small: false
 };
 
 export default Button;
