@@ -14,13 +14,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  h1{
-    font-size: 2rem;
-  }
-
-  h2{
-    font-size: 1.5rem;
-  }
 
 }
 
@@ -40,6 +33,23 @@ section{
   min-height: calc(100vh - 80px);
   padding: 20px;
   padding-top: 90px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+  h1{
+    font-size: 4rem;
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 2px solid var(--skobeloff);
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+} 
+
+h1 span { 
+   background: var(--space-cadet);
+   padding:0 10px; 
+}
 }
 
 

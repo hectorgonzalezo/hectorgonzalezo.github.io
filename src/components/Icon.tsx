@@ -5,7 +5,7 @@ const Wrapper = styled.div`
 
   position: relative;
   border-radius: 50%;
-  background-color: var(--prussian-blue);
+  background-color: var(--dark-purple);
   padding: 25px;
   margin: 10px;
   width: 50px;
@@ -60,6 +60,10 @@ const Wrapper = styled.div`
 &:hover span,
 &:hover .tooltip {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+img{
+  max-width: 64px
 }
 `;
 

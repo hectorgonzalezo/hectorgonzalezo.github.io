@@ -1,12 +1,9 @@
 #about-me{
-  display: grid;
-  align-items: center;
-  justify-items: center;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 100px 1fr 1fr;
   column-gap: clamp(5px, 3vw, 50px); 
   grid-template-areas: 
-            "img name"
+            "name name"
             "img desc"
             "tools tools";
   

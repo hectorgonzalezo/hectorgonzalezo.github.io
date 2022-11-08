@@ -1,0 +1,8 @@
+#contact {
+  & > div {
+    display: flex;
+    gap: 25px;
+    justify-self: stretch;
+    justify-content: space-around;
+  }
+}
