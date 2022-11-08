@@ -37,7 +37,9 @@ button {
 }
 
 section{
-  height: 100vh;
+  min-height: calc(100vh - 80px);
+  padding: 20px;
+  padding-top: 90px;
 }
 
 

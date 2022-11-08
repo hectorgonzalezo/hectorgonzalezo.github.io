@@ -1,13 +1,10 @@
 #about-me{
-  min-height: calc(100vh - 80px);
   display: grid;
   align-items: center;
   justify-items: center;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 100px 1fr 1fr;
-  padding: 20px;
   column-gap: clamp(5px, 3vw, 50px); 
-  padding-top: 80px;
   grid-template-areas: 
             "img name"
             "img desc"
@@ -34,6 +31,7 @@
     gap: 10px;
     width: min(800px, 100%);
     align-self: flex-start;
+
     li {
       display: grid;
       align-items: center;
