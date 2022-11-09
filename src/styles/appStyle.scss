@@ -29,7 +29,8 @@ button {
   outline: 3px solid $english-violet;
 }
 
-section{
+section,
+main{
   min-height: 100vh;
   position: relative;
   padding: 20px;

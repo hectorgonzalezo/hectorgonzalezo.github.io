@@ -18,8 +18,8 @@ function ProjectDisplay({ img, name, info, liveUrl, repoUrl } : ProjectProps) {
       <h2>{name}</h2>
       <p>{info}</p>
       <div className="buttons-area">
-        <Button text="Live Site" href={liveUrl} small />
-        <Button text="Code" href={repoUrl} small />
+        <Button text="Live Site" href={liveUrl} small label={name} />
+        <Button text="Code" href={repoUrl} small label={name} />
       </div>
     </article>
   )

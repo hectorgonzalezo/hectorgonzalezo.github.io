@@ -8,7 +8,7 @@ function AboutMe() {
   const [visible, setVisible] = useState(false);
   return (
     <InView
-      as="section"
+      as="main"
       id="about-me"
       onChange={(inView: boolean) => setVisible(inView)}
     >
