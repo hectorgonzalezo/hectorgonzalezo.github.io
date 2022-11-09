@@ -15,7 +15,6 @@ a{
   transform-style: preserve-3d;
   transform: translateZ(-25px);
   transition: transform .25s;
-  font-family: 'Montserrat', sans-serif;
 }
 a:before,
 a:after{
@@ -34,12 +33,12 @@ a:after{
 }
 a:before{
   color: #fff;
-  background: var(--midnight-green-eagle-green-3);
+  background: var(--dark-purple-2);
   transform: rotateY(0deg) translateZ(25px);
 }
 a:after{
   color: white;
-  background: var(--dark-purple-2);
+  background: var(--midnight-green-eagle-green-3);
   transform: rotateX(90deg) translateZ(25px);
 }
 a:hover{

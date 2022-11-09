@@ -1,0 +1,47 @@
+#projects{
+
+  & > div {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
+.project {
+  display: grid;
+  background-color: var(--midnight-green-eagle-green-2);
+  border-radius: 16px;
+  box-shadow: 3px 3px 7px black;
+  padding: 15px;
+  max-width: 400px;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+                      "gif"
+                      "title"
+                      "info"
+                      "buttons";
+  align-items: center;
+  justify-items: center;
+  gap: 1.5rem;
+
+  & > img{
+    grid-area: gif;
+    width: clamp(300px, 25vw, 400px);
+  }
+  & > h2 {
+    grid-area: title;
+    font-size: 2rem;
+  }
+
+  & > p {
+    grid-area: info;
+  }
+
+  & > .buttons-area {
+    grid-area: buttons;
+  }
+}

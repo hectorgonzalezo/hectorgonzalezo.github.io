@@ -3,7 +3,6 @@ import Button from './Button';
 import linkIcon from '../assets/link-icon.svg';
 import githubIcon from '../assets/github-icon.png';
 
-
 interface ProjectProps {
   img: string;
   name: string;
@@ -18,8 +17,10 @@ function ProjectDisplay({ img, name, info, liveUrl, repoUrl } : ProjectProps) {
       <img src={img} alt="" />
       <h2>{name}</h2>
       <p>{info}</p>
-      <Button text="Live Site" href={liveUrl} small />
-      <Button text="Code" href={repoUrl} small />
+      <div className="buttons-area">
+        <Button text="Live Site" href={liveUrl} small />
+        <Button text="Code" href={repoUrl} small />
+      </div>
     </article>
   )
 };
