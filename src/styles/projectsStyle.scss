@@ -1,5 +1,6 @@
 #projects{
 
+  padding-top: 100px;
   & > div {
     display: grid;
     align-items: center;
@@ -17,7 +18,7 @@
   border-radius: 16px;
   box-shadow: 3px 3px 7px black;
   padding: 15px;
-  max-width: 400px;
+  max-width: 380px;
   grid-template-columns: 1fr;
   grid-template-areas: 
                       "gif"

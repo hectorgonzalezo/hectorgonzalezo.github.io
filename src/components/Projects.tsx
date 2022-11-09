@@ -4,6 +4,7 @@ import ProjectDisplay from './ProjectDisplay';
 import redditGif from '../assets/gifs/reddit.gif';
 import battleshipGif from '../assets/gifs/battleship.gif';
 import storeGif from '../assets/gifs/store.gif';
+import waldoGif from '../assets/gifs/waldo.gif';
 import memoryGif from '../assets/gifs/memory.gif';
 import ticGif from '../assets/gifs/tic.gif';
 
@@ -45,9 +46,10 @@ function Projects() {
               repoUrl='https://github.com/hectorgonzalezo/shopping-cart'
             />
              <ProjectDisplay
-              img={storeGif}
-              name="Shopping Cart App"
-              info="Online store made with React"
+              img={waldoGif}
+              name="Find me"
+              info={`Character finding game based on "Where's Waldo?".\n
+              Made with React.`}
               liveUrl='https://hectorgonzalezo.github.io/shopping-cart/'
               repoUrl='https://github.com/hectorgonzalezo/shopping-cart'
             />

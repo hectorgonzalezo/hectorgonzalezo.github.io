@@ -8,8 +8,8 @@ const Wrapper = styled.div`
   background-color: var(--dark-purple);
   padding: 25px;
   margin: 10px;
-  width: clamp(1.8rem, 7vw, 3rem);
-  height: clamp(1.8rem, 7vw, 3rem);
+  width: clamp(1.2rem, 5vw, 3rem);
+  height: clamp(1.2rem, 5vw, 3rem);
   font-size: 18px;
   display: flex;
   justify-content: center;
@@ -63,7 +63,7 @@ const Wrapper = styled.div`
 }
 
 img{
-  max-width: 58px
+  width: clamp(38px, 5vw, 64px)
 }
 `;
 

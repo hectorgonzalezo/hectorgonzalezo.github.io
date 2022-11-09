@@ -1,13 +1,13 @@
 #about-me{
   padding-top: 90px;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 100px 1fr 1fr;
+  grid-template-rows: 100px 1fr auto;
   column-gap: clamp(5px, 3vw, 50px); 
+  row-gap: 20px;
   grid-template-areas: 
             "name name"
             "img desc"
             "tools tools";
-
   
   & > img{
     width: clamp(100px, 33vw, 200px);
@@ -20,9 +20,19 @@
     grid-area: name;
     justify-self: start;
   }
-  & > p{
+   p{
     grid-area: desc;
     justify-self: start;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    line-height: 2rem;
+    text-indent: 4rem;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+  a {
+    color: var(--english-violet-light);
   }
   ul {
     grid-area: tools;
@@ -30,12 +40,13 @@
     gap: 10px;
     width: min(800px, 100%);
     align-self: flex-start;
+    margin-bottom: 50px;
 
     li {
       display: grid;
       align-items: center;
       grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      gap: 20px;
+      gap: 10px;
     }
     i{
       font-size: 10rem;
@@ -45,4 +56,22 @@
     }
 
   }
+};
+
+@media (max-width: 600px) {
+  #about-me{
+    padding-top: 90px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 1fr auto;
+    gap: 15px;
+    grid-template-areas: 
+                        "name"
+                        "img"
+                        "desc"
+                        "tools";
+  img{
+    align-self: center;
+    justify-self: center;
+  }
+}
 }

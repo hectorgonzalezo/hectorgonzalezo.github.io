@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const StyledButton = styled.span`
   position: relative;
   display: inline-flex;
-  width: ${(props : ButtonProps) => props.small ? "clamp(100px, 15vw, 150px)" : "280px"};
+  width: ${(props : ButtonProps) => props.small ? "clamp(100px, 14vw, 150px)" : "280px"};
   height: 55px;
   margin: 0 15px;
   perspective: 1000px;
@@ -37,8 +37,8 @@ a:before{
   transform: rotateY(0deg) translateZ(25px);
 }
 a:after{
-  color: white;
-  background: var(--midnight-green-eagle-green-3);
+  color: var(--english-violet-light);
+  background: black;
   transform: rotateX(90deg) translateZ(25px);
 }
 a:hover{
