@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.aba4c375.css",
-    "main.js": "/static/js/main.f17defe6.js",
+    "main.css": "/static/css/main.7b560874.css",
+    "main.js": "/static/js/main.e7c17d57.js",
+    "static/media/waldo.gif": "/static/media/waldo.ce7a4a5f92c1cfeae132.gif",
+    "static/media/store.gif": "/static/media/store.68c16eb351a042839b88.gif",
+    "static/media/memory.gif": "/static/media/memory.b299ab3cb2240177daef.gif",
+    "static/media/reddit.gif": "/static/media/reddit.f908b10914532414a4d3.gif",
     "static/media/portrait.jpg": "/static/media/portrait.3ec78fd6f5d500c71cbe.jpg",
+    "static/media/tic.gif": "/static/media/tic.c62a62681c0403ab8581.gif",
+    "static/media/battleship.gif": "/static/media/battleship.956824769c4eb277ca20.gif",
     "index.html": "/index.html",
     "static/media/mail-logo.svg": "/static/media/mail-logo.e3b8f018d99087be679f3fc6678cf1e9.svg",
-    "main.aba4c375.css.map": "/static/css/main.aba4c375.css.map",
-    "main.f17defe6.js.map": "/static/js/main.f17defe6.js.map"
+    "main.7b560874.css.map": "/static/css/main.7b560874.css.map",
+    "main.e7c17d57.js.map": "/static/js/main.e7c17d57.js.map"
   },
   "entrypoints": [
-    "static/css/main.aba4c375.css",
-    "static/js/main.f17defe6.js"
+    "static/css/main.7b560874.css",
+    "static/js/main.e7c17d57.js"
   ]
 }
