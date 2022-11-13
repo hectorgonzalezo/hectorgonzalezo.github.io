@@ -15,3 +15,9 @@ nav{
     padding: 15px;
   }
 }
+
+@media (max-width: 400px){
+  nav {
+    justify-content: center;
+  }
+}

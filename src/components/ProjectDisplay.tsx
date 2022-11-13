@@ -1,7 +1,5 @@
 import React from 'react';
 import Button from './Button';
-import linkIcon from '../assets/link-icon.svg';
-import githubIcon from '../assets/github-icon.png';
 
 interface ProjectProps {
   img: string;
