@@ -63,7 +63,7 @@ const Wrapper = styled.div`
 }
 
 img{
-  width: clamp(38px, 5vw, 64px)
+  width: clamp(20px, 3vw, 32px)
 }
 `;
 

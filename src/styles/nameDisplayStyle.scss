@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
+  font-weight: bold;
 
   h1{
     font-size: clamp(3rem, 6vw, 5rem);
@@ -14,6 +15,7 @@
   }
   h2{
     font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--light-purple);
     -webkit-animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: text-pop-up-top 2s 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }

@@ -1,16 +1,16 @@
 #about-me{
   padding-top: 90px;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 100px 1fr auto;
+  grid-template-columns: 1.5fr 2fr;
+  grid-template-rows: 100px 1fr 1fr;
   column-gap: clamp(5px, 3vw, 50px); 
   row-gap: 20px;
   grid-template-areas: 
             "name name"
             "img desc"
-            "tools tools";
+            "tools desc";
   
   & > img{
-    width: clamp(100px, 33vw, 200px);
+    width: clamp(250px, 40vw, 600px);
     grid-area: img;
     justify-self: end;
     border-radius: 2rem;
@@ -23,7 +23,7 @@
    p{
     grid-area: desc;
     justify-self: start;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 2rem;
     text-indent: 4rem;
   }
@@ -57,7 +57,7 @@
   }
 };
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   #about-me{
     padding-top: 90px;
     grid-template-columns: 1fr;

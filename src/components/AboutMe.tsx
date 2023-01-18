@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { InView } from 'react-intersection-observer';
-import Portrait from '../assets/portrait.jpg';
+import Portrait from '../assets/portrait.jpeg';
 import Icon from './Icon';
 import '../styles/aboutMeStyle.scss';
 

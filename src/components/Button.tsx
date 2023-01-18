@@ -10,11 +10,11 @@ const StyledButton = styled.span`
   perspective: 1000px;
 
 a{
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1.5rem, 3vw, 1.7rem);
   letter-spacing: 1px;
   transform-style: preserve-3d;
   transform: translateZ(-25px);
-  transition: transform .25s;
+  transition: transform 0.5s;
 }
 a:before,
 a:after{
@@ -25,24 +25,34 @@ a:after{
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 5px solid gray;
   padding: 5px 10px 5px 10px;
   box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: 36px;
   box-shadow: 3px 3px 8px black;
 }
 a:before{
+  opacity: 1;
+  transition: 0.5s opacity;
   color: #fff;
-  background: var(--dark-purple-2);
+  background: var(--light-purple);
   transform: rotateY(0deg) translateZ(25px);
 }
 a:after{
-  color: var(--english-violet-light);
+  opacity: 0;
+  transition: 0.5s opacity;
+  color: var(--light-purple);
   background: black;
   transform: rotateX(90deg) translateZ(25px);
+
 }
 a:hover{
   transform: translateZ(-25px) rotateX(-90deg);
+  &:before{
+    opacity: 0;
+  }
+  &:after{
+    opacity: 1;
+  }
 }
 
 `;

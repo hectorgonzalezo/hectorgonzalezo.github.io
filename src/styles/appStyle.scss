@@ -2,15 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
 @import './animations.scss';
 
-:root {
+*{
+  outline: 1px dashed red;
+}
 
+
+:root {
   color: white;
   font-size: clamp(13px, 2vw, 16px);
   font-family: 'Lora', serif;
 }
 
 .App{
-  background-color: $space-cadet;
+  background-color: var(--background-blue);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -56,6 +60,13 @@ main{
     word-wrap:break-word;
     white-space: normal;
   }
+}
+
+.circle {
+  background: $light-blue;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
 }
 
 

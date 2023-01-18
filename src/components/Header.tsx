@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from './Button';
 import '../styles/headerStyle.scss';
 
 function Header() {
@@ -7,15 +6,16 @@ function Header() {
     <nav>
       <ul>
         <li>
-          <Button text="About Me" href="#about-me" small />
+          <a href="#about-me">About Me</a>
         </li>
         <li>
-          <Button text="Projects" href="#projects" small/>
+          <a href="#projects">Projects</a>
         </li>
         <li>
-          <Button text="Contact" href="#contact" small />
+          <a href="#contact">Contact</a>
         </li>
       </ul>
+      <div className="circle" />
     </nav>
   );
 }
