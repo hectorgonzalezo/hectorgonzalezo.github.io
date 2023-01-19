@@ -1,26 +1,30 @@
 #about-me{
-  padding-top: 90px;
+  background-color: var(--medium-blue);
+  padding-top: 60px;
   grid-template-columns: 1.5fr 2fr;
-  grid-template-rows: 100px 1fr 1fr;
+  grid-template-rows: 100px auto 1fr;
   column-gap: clamp(5px, 3vw, 50px); 
   row-gap: 20px;
   grid-template-areas: 
-            "name name"
+            "img name"
             "img desc"
             "tools desc";
   
   & > img{
     width: clamp(250px, 40vw, 600px);
     grid-area: img;
-    justify-self: end;
+    align-self: start;
+    justify-self: start;
     border-radius: 2rem;
   }
 
   & > h1{
     grid-area: name;
     justify-self: start;
+    text-align: start;
   }
-   p{
+   .text{
+    padding: 15px;
     grid-area: desc;
     justify-self: start;
     font-size: 1.1rem;
@@ -33,25 +37,38 @@
   a {
     color: var(--english-violet-light);
   }
-  ul {
+  .tools{
     grid-area: tools;
-    display: grid;
-    gap: 10px;
+    border-radius: 10px;
     width: min(800px, 100%);
+    height: 100%;
+    padding: 20px;
+    background-color: var(--background-blue);
+  }
+  ul {
+    display: grid;
+    grid-template-rows: 30px auto 30px auto 1fr;
+    gap: 5px;
+    padding: 20px;
     align-self: flex-start;
+    justify-content: center;
     margin-bottom: 50px;
-
+    border: 3px solid var(--light-blue);
+    border-radius: 30px;
     li {
-      display: grid;
+      display: flex;
       align-items: center;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
       gap: 10px;
+      .icon:not(:last-child){
+        margin-right: -10px;
+        border-right: 2px solid var(--light-blue);
+      }
     }
     i{
       font-size: 10rem;
     }
     img{
-      width: clamp(36px, 8vw, 64px)
+      width: 32px;
     }
 
   }

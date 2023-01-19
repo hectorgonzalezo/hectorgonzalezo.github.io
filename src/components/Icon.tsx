@@ -4,31 +4,24 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
 
   position: relative;
-  border-radius: 50%;
-  background-color: var(--dark-purple);
   padding: 25px;
-  margin: 10px;
-  width: clamp(1.2rem, 5vw, 3rem);
-  height: clamp(1.2rem, 5vw, 3rem);
-  font-size: 18px;
+  width: clamp(10px, 2vw, 40px);
+  height: 0px;
+  font-size: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   z-index: 0;
 
-  &:hover{
-    background-color: var(--dark-purple-2);
-  }
 
   .tooltip {
   position: absolute;
   top: 0;
-  font-size: 1.5rem;
-  background: var(--dark-purple-2);
+  font-size: 1.1rem;
+  background: var(--light-purple);
   color: #ffffff;
   padding: 8px;
   border-radius: 1rem;
@@ -43,7 +36,7 @@ const Wrapper = styled.div`
   content: " ";
   height: 8px;
   width: 8px;
-  background: var(--dark-purple-2);
+  background: var(--light-purple);
   bottom: -3px;
   left: 50%;
   transform: translate(-50%) rotate(45deg);
@@ -63,7 +56,7 @@ const Wrapper = styled.div`
 }
 
 img{
-  width: clamp(20px, 3vw, 32px)
+  width: clamp(34px, 4vw, 68px)
 }
 `;
 

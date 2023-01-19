@@ -3,7 +3,7 @@
 @import './animations.scss';
 
 *{
-  outline: 1px dashed red;
+  // outline: 1px dashed red;
 }
 
 
@@ -49,17 +49,8 @@ main{
     font-size: 4rem;
     width: 100%; 
     text-align: center; 
-    border-bottom: 2px solid var(--skobeloff);
-    line-height: 0.1em;
-    margin: 10px 0 20px; 
   } 
 
-  h1 span { 
-    background: var(--space-cadet);
-    padding:0 10px;
-    word-wrap:break-word;
-    white-space: normal;
-  }
 }
 
 .circle {
