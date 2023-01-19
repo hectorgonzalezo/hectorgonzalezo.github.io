@@ -1,12 +1,10 @@
 #contact {
-  background-color: var(--skobeloff);
+  background-color: var(--medium-blue);
   h1 {
-    border-bottom: 2px solid var(--space-cadet);
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--light-blue);
     align-self: end;
     z-index: 1;
-     span {
-      background-color: var(--skobeloff); 
-     }
   }
   & > div {
     display: flex;
@@ -25,7 +23,7 @@
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
     
-    border-top: 20vh solid var(--space-cadet);
+    border-top: 20vh solid var(--background-blue);
   }
 
   .icon {

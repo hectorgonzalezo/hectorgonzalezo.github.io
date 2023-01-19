@@ -14,7 +14,7 @@ function Contact() {
       <div className="arrow"/>
         {visible ?
         <>
-        <h1><span>Contact</span></h1>
+        <h1>Contact</h1>
         <div>
         <Icon text="Github">
           <a href="https://github.com/hectorgonzalezo">

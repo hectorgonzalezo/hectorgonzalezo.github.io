@@ -1,23 +1,14 @@
 #projects{
   padding-top: 100px;
-  & > div {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    width: 100%;
-    padding: 2rem 1rem 1rem 1rem;
-  }
 }
 
 .project {
   display: grid;
-  background-color: var(--midnight-green-eagle-green-2);
-  border-radius: 16px;
+  border-radius: 36px;
+  border: 3px solid var(--light-blue);
   box-shadow: 3px 3px 7px black;
-  padding: 15px;
-  max-width: 380px;
+  padding: 10px;
+  width: clamp(230px, 40vw, 430px);
   grid-template-columns: 1fr;
   grid-template-areas: 
                       "gif"
@@ -30,7 +21,8 @@
 
   & > img{
     grid-area: gif;
-    width: clamp(150px, 25vw, 400px);
+    border-radius: 26px;
+    width: clamp(200px, 40vw, 400px);
   }
   & > h2 {
     grid-area: title;
