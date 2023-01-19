@@ -10,7 +10,7 @@ const StyledButton = styled.span`
   perspective: 1000px;
 
 a{
-  font-size: clamp(1.5rem, 3vw, 1.7rem);
+  font-size: 24px;
   letter-spacing: 1px;
   transform-style: preserve-3d;
   transform: translateZ(-25px);

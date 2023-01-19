@@ -1,16 +1,31 @@
 @import './reset.css';
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
 @import './animations.scss';
+
+@font-face {
+  font-family: "gobold";
+  src: local("gobold_lowplus-webfont"),
+    url("../fonts/gobold_lowplus-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "futura";
+  src: local("futurabookbt-webfont"),
+    url("../fonts/futurabookbt-webfont.woff") format("woff");
+}
 
 *{
   // outline: 1px dashed red;
 }
 
+h1, h2{
+  font-family: 'gobold', 'serif';
+  letter-spacing: 2px;
+}
 
 :root {
   color: white;
   font-size: clamp(13px, 2vw, 16px);
-  font-family: 'Lora', serif;
+  font-family: 'futura', serif;
 }
 
 .App{

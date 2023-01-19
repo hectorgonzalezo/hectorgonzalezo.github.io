@@ -7,7 +7,13 @@
   justify-content: center;
   gap: 30px;
   font-weight: bold;
+  background-image: url('../assets/fondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 
+  h1, h2{
+    letter-spacing: 0.1rem;
+  }
   h1{
     font-size: clamp(3rem, 6vw, 5rem);
     -webkit-animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
