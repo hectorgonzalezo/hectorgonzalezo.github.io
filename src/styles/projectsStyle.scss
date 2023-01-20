@@ -1,5 +1,4 @@
 #projects{
-  // padding-top: 50px;
   height: 100vh;
   h1{
     align-self: flex-end;
@@ -16,7 +15,6 @@
   box-shadow: 3px 3px 7px black;
   padding: 10px;
   width: min(clamp(230px, 40vw, 430px), clamp(230px, 50vh,430px));
-  // height: clamp(400px, 33vh, 800px);
   grid-template-columns: 1fr;
   grid-template-areas: 
                       "gif"
@@ -44,6 +42,9 @@
     flex-wrap: wrap;
     .icon{
       padding: 8px;
+      .tooltip{
+        top: -25px;
+      }
     }
     img{
       width: min(clamp(18px, 4vw, 24px), clamp(18px, 4vh, 24px));

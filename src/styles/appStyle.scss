@@ -24,7 +24,7 @@ h1, h2{
 
 :root {
   color: white;
-  font-size: min(clamp(13px, 2vw, 16px), clamp(11px, 2vh, 16px));
+  font-size: min(clamp(13px, 2vw, 16px), clamp(13px, 2vh, 16px));
   font-family: 'futura', serif;
 }
 
@@ -73,6 +73,7 @@ main{
   width: 15px;
   height: 15px;
   border-radius: 50%;
+  position: absolute;
 }
 
 
@@ -108,8 +109,8 @@ main{
 .swiper-button-next,
 .swiper-button-prev {
   border-radius: 200%;
-  height: 48px;
-  width: 48px;
+  height: clamp(32px, 6vw, 48px);
+  width: clamp(32px, 6vw, 48px);
   background-color: var(--light-purple);
   color: var(--background-blue);
   font-size: 12px;

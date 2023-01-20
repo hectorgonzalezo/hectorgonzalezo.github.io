@@ -3,7 +3,7 @@ import { InView } from 'react-intersection-observer';
 import Icon from './Icon';
 import Button from './Button';
 import githubLogo from '../assets/github-logo.png';
-import emailLogo from '../assets/mail-logo.svg';
+import emailLogo from '../assets/mail-logo.png';
 import linkedinLogo from '../assets/linkedin-logo.png';
 import '../styles/contactStyle.scss';
 
@@ -26,7 +26,7 @@ function Contact() {
             <img src={emailLogo} alt="Email" />
           </a>
         </Icon>
-        <Icon text="Héctor González">
+        <Icon text="Héctor González Orozco">
           <a href="https://www.linkedin.com/in/hector-gonzalez-orozco/">
             <img src={linkedinLogo} alt="LinkedIn" />
           </a>

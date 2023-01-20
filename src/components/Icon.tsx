@@ -19,6 +19,7 @@ const Wrapper = styled.div`
   .tooltip {
     position: absolute;
     top: 0;
+    white-space: nowrap;
     font-size: 1.1rem;
     background: var(--light-purple);
     color: #ffffff;
@@ -42,8 +43,9 @@ const Wrapper = styled.div`
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
-  &:hover .tooltip {
-    top: -45px;
+  &:hover .tooltip,
+  .tooltip:hover {
+    top: -15px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;

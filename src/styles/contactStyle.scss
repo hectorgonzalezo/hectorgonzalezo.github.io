@@ -11,6 +11,9 @@
     gap: 25px;
     justify-self: stretch;
     justify-content: space-evenly;
+    img{
+      width: clamp(48px, 15vw, 126px);
+    }
   }
 
   .arrow {
@@ -22,12 +25,16 @@
     transform: translate(-50%);
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
-    
     border-top: 20vh solid var(--background-blue);
   }
 
+
   .icon {
     opacity: 1;
+    * {
+      font-size: 1.5rem;
+    }
+
   }
 
   .icon:first-child{
