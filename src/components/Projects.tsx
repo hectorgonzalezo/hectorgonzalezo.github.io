@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SwiperCore, { EffectCoverflow, Pagination, Navigation, Scrollbar, } from 'swiper';
+import SwiperCore, { EffectCoverflow, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { InView } from 'react-intersection-observer';
 import ProjectDisplay from './ProjectDisplay';

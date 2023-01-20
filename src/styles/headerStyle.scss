@@ -3,18 +3,20 @@
 nav{
   position: relative;
   background-color: $background-blue;
+  background-image: url('../assets/fondo.jpg');
+  background-size: cover;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
   position: sticky;
   top: 0px;
-  min-height: 65px;
+  min-height: 70px;
   z-index: 10;
   ul{
     border-top: 3px solid $light-blue;
     display: flex;
     justify-content: center;
-    padding: 15px;
+    padding: 14px;
     width: calc(100vw - 80px);
     li:first-child{
       a{
@@ -30,7 +32,6 @@ nav{
   }
   a{
     padding: 12px;
-    background-color: $background-blue;
     color: white;
     font-size: 20px;
     &:hover{
@@ -39,7 +40,7 @@ nav{
   }
   .circle{
     position: absolute;
-    top: 6px;
+    top: 13px;
     right: 40px;
   }
 }

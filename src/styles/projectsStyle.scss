@@ -1,5 +1,6 @@
 #projects{
-  padding-top: 100px;
+  padding-top: 50px;
+  height: 100vh;
 }
 
 .project {
@@ -36,11 +37,7 @@
 
   & > .buttons-area {
     grid-area: buttons;
-  }
-}
-
-@media (max-width: 400px) {
-  #projects > div{
-    grid-template-columns: auto; 
+    display: flex;
+    gap: 5px;
   }
 }

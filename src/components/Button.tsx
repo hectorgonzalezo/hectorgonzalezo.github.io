@@ -4,13 +4,13 @@ import styled from 'styled-components';
 const StyledButton = styled.span`
   position: relative;
   display: inline-flex;
-  width: ${(props : ButtonProps) => props.small ? "clamp(80px, 14vw, 150px)" : "280px"};
+  width: ${(props : ButtonProps) => props.small ? "clamp(80px, 14vw, 130px)" : "280px"};
   height: 55px;
   margin: 0 15px;
   perspective: 1000px;
 
 a{
-  font-size: 24px;
+  font-size: 1.3rem;
   letter-spacing: 1px;
   transform-style: preserve-3d;
   transform: translateZ(-25px);
@@ -21,7 +21,7 @@ a:after{
   position: absolute;
   content: "${(props : ButtonProps) => props.text}";
   height: 55px;
-  width: ${(props : ButtonProps) => props.small ? "clamp(80px, 15vw, 150px)" : "280px"};
+  width: ${(props : ButtonProps) => props.small ? "clamp(80px, 15vw, 130px)" : "280px"};
   display: flex;
   align-items: center;
   justify-content: center;
