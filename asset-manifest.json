@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3442473a.css",
-    "main.js": "/static/js/main.49e391d9.js",
+    "main.css": "/static/css/main.81b9984b.css",
+    "main.js": "/static/js/main.ff1a635c.js",
     "static/media/waldo.gif": "/static/media/waldo.ce7a4a5f92c1cfeae132.gif",
     "static/media/store.gif": "/static/media/store.68c16eb351a042839b88.gif",
     "static/media/memory.gif": "/static/media/memory.b299ab3cb2240177daef.gif",
@@ -14,13 +14,12 @@
     "static/media/futurabookbt-webfont.woff": "/static/media/futurabookbt-webfont.d1d903c3ca5a87d715cd.woff",
     "static/media/gobold_lowplus-webfont.woff": "/static/media/gobold_lowplus-webfont.9a3d264aac657a80c5e7.woff",
     "index.html": "/index.html",
-    "static/media/mail-logo.svg": "/static/media/mail-logo.e3b8f018d99087be679f3fc6678cf1e9.svg",
     "static/media/arrow_icon.svg": "/static/media/arrow_icon.d4a51c5066e8b6fcdafb.svg",
-    "main.3442473a.css.map": "/static/css/main.3442473a.css.map",
-    "main.49e391d9.js.map": "/static/js/main.49e391d9.js.map"
+    "main.81b9984b.css.map": "/static/css/main.81b9984b.css.map",
+    "main.ff1a635c.js.map": "/static/js/main.ff1a635c.js.map"
   },
   "entrypoints": [
-    "static/css/main.3442473a.css",
-    "static/js/main.49e391d9.js"
+    "static/css/main.81b9984b.css",
+    "static/js/main.ff1a635c.js"
   ]
 }
