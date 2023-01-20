@@ -17,15 +17,20 @@ function AboutMe() {
           <img src={Portrait} alt="Héctor González Orozco" />
           <h1>About Me</h1>
           <div className="text">
-            <p>Full-stack software developer and Computer Music Composer.</p>
+          <h2>Full stack developer</h2>
             <br />
             <p>
-              I've been composing and performing Interactive Computer Music
+              I've been developing and performing with interactive music systems
               using <a href="https://supercollider.github.io/">SuperCollider</a>{" "}
-              for the past 5 years. Recently finished an MA in music, where I
-              focused on developing systems for interactive music performance,
-              my thesis can be found{" "}
+              for more than 5 years. In a nutshell, these systems involve employing
+              some sort of electronic controller and a piece of software that produces
+              sound based on data sent in real time by the controller, using a 
+              client-server architecture, you can reade more about them in{" "}
+              <a href="https://blog-client-mern.netlify.app/">my blog</a>
+              . Recently finished an MA in experimental music, 
+              where I focused on said topic, my thesis can be found{" "}
               <a href="https://github.com/hectorgonzalezo/thesis">here</a>.
+
             </p>
             <br />
             <p>
@@ -36,15 +41,15 @@ function AboutMe() {
             </p>
             <br />
             <p>
-              Ever since I've been passionate about creating from scratch using
+              Ever since, I've been passionate about expressing my creativity using
               code, be it music, instruments or webpages. So, last year I
               decided to start learning modern web development seriously.
             </p>
             <br />
             <p>
-              One of the things that excites me so much about programming is the
+              One of the things that excites me so much about software development is the
               fact that you are always kept on your toes: I just love learning
-              new technologies. I'm therefore excited about a career that
+              new technologies. I'm excited about a career that
               involves life-long learning, that means I'll never be bored!
             </p>
           </div>
@@ -52,25 +57,25 @@ function AboutMe() {
           <ul>
               <h2>Languages</h2>
             <li>
-              <Icon text="Html">
+              <Icon text="HTML">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
                   alt="HTML 5"
                 />
               </Icon>
-              <Icon text="Css">
+              <Icon text="CSS">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
                   alt="CSS 3"
                 />
               </Icon>
-              <Icon text="Javascript">
+              <Icon text="JavaScript">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
                   alt="JavaScript"
                 />
               </Icon>
-              <Icon text="Typescript">
+              <Icon text="TypeScript">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
                   alt="TypeScript"
@@ -107,6 +112,19 @@ function AboutMe() {
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"
                   alt="Node"
+                />
+              </Icon>
+              <Icon text="Express">
+                <img
+                  id="express"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                  alt="Express"
+                />
+              </Icon>
+              <Icon text="MongoDB">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                  alt="MongoDb"
                 />
               </Icon>
               <Icon text="Jest">
