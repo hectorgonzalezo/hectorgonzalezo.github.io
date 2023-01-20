@@ -1,6 +1,12 @@
 #projects{
-  padding-top: 50px;
+  // padding-top: 50px;
   height: 100vh;
+  h1{
+    align-self: flex-end;
+  }
+  .buttons{
+    align-self: start;
+  }
 }
 
 .project {
@@ -9,13 +15,13 @@
   border: 3px solid var(--light-blue);
   box-shadow: 3px 3px 7px black;
   padding: 10px;
-  width: clamp(230px, 40vw, 430px);
+  width: min(clamp(230px, 40vw, 430px), clamp(230px, 50vh,430px));
+  // height: clamp(400px, 33vh, 800px);
   grid-template-columns: 1fr;
   grid-template-areas: 
                       "gif"
                       "title"
-                      "info"
-                      "buttons";
+                      "stack";
   align-items: center;
   justify-items: center;
   gap: 1.5rem;
@@ -23,21 +29,24 @@
   & > img{
     grid-area: gif;
     border-radius: 26px;
-    width: clamp(200px, 40vw, 400px);
+    width: 100%;
   }
   & > h2 {
     grid-area: title;
     font-size: 2rem;
   }
 
-  & > p {
-    grid-area: info;
-    line-height: 1.5rem;
-  }
 
-  & > .buttons-area {
-    grid-area: buttons;
+  & > .stack{
+    grid-area: stack;
     display: flex;
-    gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+    .icon{
+      padding: 8px;
+    }
+    img{
+      width: min(clamp(18px, 4vw, 24px), clamp(18px, 4vh, 24px));
+    }
   }
 }

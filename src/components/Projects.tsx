@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import SwiperCore, { EffectCoverflow, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { InView } from 'react-intersection-observer';
+import Button from './Button';
 import ProjectDisplay from './ProjectDisplay';
 import redditGif from '../assets/gifs/reddit.gif';
+import blogGif from '../assets/gifs/blog.gif';
 import battleshipGif from '../assets/gifs/battleship.gif';
 import storeGif from '../assets/gifs/store.gif';
 import waldoGif from '../assets/gifs/waldo.gif';
@@ -13,13 +15,12 @@ import ticGif from '../assets/gifs/tic.gif';
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
 
-
 import '../styles/projectsStyle.scss';
 
 function Projects() {
   const [visible, setVisible] = useState(false);
-
-  // SwiperCore.use([EffectCoverflow, Pagination]);
+  const [liveSiteUrl, setLiveSiteUrl] = useState('');
+  const [codeUrl, setCodeUrl] = useState('');
 
   return (
     <InView
@@ -51,23 +52,42 @@ function Projects() {
             }}
             navigation
             className="mySwiper"
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={(swiperCore) => {
+              // Extract data for live site and code buttons
+              const { realIndex } = swiperCore;
+              const projectElement = swiperCore.slides[realIndex].children[0];
+              const liveSite = projectElement.getAttribute('data-live-site-url');
+              const codeSite = projectElement.getAttribute('data-code-url');
+              
+              if(typeof liveSite === 'string' && typeof codeSite === 'string'){
+                setLiveSiteUrl(liveSite);
+                setCodeUrl(codeSite);
+              }
+          }}
           >
             <SwiperSlide>
               <ProjectDisplay
                 img={redditGif}
                 name="Reddit clone"
-                info="A reddit clone made with react, redux and firebase"
+                stack={['TypeScript', 'React', 'Redux', 'Node', 'Express', 'MongoDB', 'Jest']}
                 liveUrl="https://reddit-clone-83ce9.web.app/"
                 repoUrl="https://github.com/hectorgonzalezo/reddit-clone"
               />
             </SwiperSlide>
             <SwiperSlide>
               <ProjectDisplay
+                img={blogGif}
+                name="Personal Blog"
+                stack={['TypeScript', 'React', 'Redux', 'Node', 'Express', 'MongoDB']}
+                liveUrl="https://blog-client-mern.netlify.app/"
+                repoUrl="https://github.com/hectorgonzalezo/blog-client"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProjectDisplay
                 img={battleshipGif}
                 name="Battleship Game"
-                info="Game made using vanilla javascript"
+                stack={['JavaScript', 'Jest', 'Webpack']}
                 liveUrl="https://hectorgonzalezo.github.io/battleship/"
                 repoUrl="https://github.com/hectorgonzalezo/battleship"
               />
@@ -76,7 +96,7 @@ function Projects() {
               <ProjectDisplay
                 img={storeGif}
                 name="Shopping Cart App"
-                info="Online store made with React"
+                stack={['React', 'Jest']}
                 liveUrl="https://hectorgonzalezo.github.io/shopping-cart/"
                 repoUrl="https://github.com/hectorgonzalezo/shopping-cart"
               />
@@ -84,18 +104,17 @@ function Projects() {
             <SwiperSlide>
               <ProjectDisplay
                 img={waldoGif}
-                name="Find me"
-                info={`Character finding game based on "Where's Waldo?".\n
-                Made with React.`}
-                liveUrl="https://hectorgonzalezo.github.io/shopping-cart/"
-                repoUrl="https://github.com/hectorgonzalezo/shopping-cart"
+                name="Photo Tagging Game"
+                stack={['React']}
+                liveUrl="https://hectorgonzalezo.github.io/tagging-game/"
+                repoUrl="https://github.com/hectorgonzalezo/tagging-game"
               />
             </SwiperSlide>
             <SwiperSlide>
               <ProjectDisplay
                 img={memoryGif}
                 name="Memory Card Game"
-                info="Rick and Morty card game made with React"
+                stack={['React', 'Jest']}
                 liveUrl="https://hectorgonzalezo.github.io/memory-card/"
                 repoUrl="https://github.com/hectorgonzalezo/memory-card"
               />
@@ -104,12 +123,16 @@ function Projects() {
               <ProjectDisplay
                 img={ticGif}
                 name="Tic-Tac-Toe"
-                info="Tic-Tac-Toe game made with vanilla Javascript."
+                stack={['JavaScript', 'Webpack']}
                 liveUrl="https://hectorgonzalezo.github.io/tic-tac-toe/"
                 repoUrl="https://github.com/hectorgonzalezo/tic-tac-toe"
               />
             </SwiperSlide>
           </Swiper>
+          <div className="buttons">
+          <Button text="Live Site" href={liveSiteUrl} small/>
+        <Button text="Code" href={codeUrl} small/>
+          </div>
         </>
       ) : null}
     </InView>

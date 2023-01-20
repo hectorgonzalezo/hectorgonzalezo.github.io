@@ -24,7 +24,7 @@ h1, h2{
 
 :root {
   color: white;
-  font-size: clamp(13px, 2vw, 16px);
+  font-size: min(clamp(13px, 2vw, 16px), clamp(11px, 2vh, 16px));
   font-family: 'futura', serif;
 }
 
@@ -84,8 +84,6 @@ main{
 .swiper {
   width: 100%;
   height: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .swiper-slide {

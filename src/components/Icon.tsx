@@ -4,16 +4,8 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   position: relative;
   padding: 25px;
-  ${(props: { color?: boolean }) =>
-    props.color
-      ? `
-    border-radius: 50%;
-    background-color: var(--light-purple);
-    width: clamp(1.2rem, 5vw, 3rem);
-    height: clamp(1.2rem, 5vw, 3rem);
-  `
-      : `width: clamp(10px, 2vw, 40px);
-  height: 0px;`};
+  width: clamp(10px, 2vw, 40px);
+  height: 0px
 
   font-size: 12px;
   display: flex;
@@ -63,22 +55,18 @@ const Wrapper = styled.div`
   }
 
   img {
-    ${(props: { color?: boolean }) =>
-    props.color
-      ? 'width: clamp(48px, 6vw, 68px)' :
-    'width: clamp(34px, 4vw, 68px)'}
+    width: clamp(34px, 4vw, 68px)
   }
 `;
 
 interface IconProps {
   children: React.ReactNode;
   text: string;
-  color?: boolean;
 }
 
-function Icon({ children, text, color = false } : IconProps) {
+function Icon({ children, text } : IconProps) {
   return (
-    <Wrapper className="icon" color={color}>
+    <Wrapper className="icon">
       <span className="tooltip">{text}</span>
       <span>{children}</span>
     </Wrapper>
