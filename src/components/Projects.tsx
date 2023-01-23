@@ -70,7 +70,7 @@ function Projects() {
                 img={redditGif}
                 name="Reddit clone"
                 stack={['TypeScript', 'React', 'Redux', 'Node', 'Express', 'MongoDB', 'Jest']}
-                liveUrl="https://reddit-clone-83ce9.web.app/"
+                liveUrl="https://reddit-clone-52.netlify.app/"
                 repoUrl="https://github.com/hectorgonzalezo/reddit-clone"
               />
             </SwiperSlide>
