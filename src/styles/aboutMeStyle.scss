@@ -8,6 +8,7 @@
     );
   min-height: 1000px;
   padding-top: 100px;
+  padding-left: 40px;
   grid-template-columns: 1.5fr 2fr;
   grid-template-rows: 100px auto 1fr;
   column-gap: clamp(5px, 3vw, 50px); 
@@ -66,6 +67,9 @@
       flex-wrap: wrap;
       align-items: center;
       gap: 5px;
+      .icon{
+        height: 0px;
+      }
       .icon:not(:last-child){
         margin-right: -5px;
         border-right: 2px solid var(--light-blue);
@@ -109,6 +113,9 @@
   h1{
     text-align: center;
   }
+  p{
+    font-size: 1.3rem;
+  }
   img{
     align-self: center;
     justify-self: center;
@@ -117,9 +124,6 @@
   .tools{
     .icon{
       width: 0px;
-    }
-    img{
-    //  width: 12px;
     }
   }
 }
