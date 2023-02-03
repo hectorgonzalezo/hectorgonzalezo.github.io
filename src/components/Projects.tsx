@@ -43,12 +43,12 @@ function Projects() {
             spaceBetween={30}
             slidesPerView={"auto"}
             coverflowEffect={{
-              rotate: 65,
-              scale: 0.8,
+              rotate: 0,
+              scale: 0.6,
               stretch: 0,
-              depth: 10,
+              depth: 100,
               modifier: 1,
-              slideShadows: false,
+              slideShadows: true,
             }}
             navigation
             className="mySwiper"

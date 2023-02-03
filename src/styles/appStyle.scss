@@ -101,6 +101,7 @@ main{
 .swiper-button-prev:after {
     font-size: 0px;
     content: url('../assets/arrow_icon.svg');
+    z-index: 100;
   }
   .swiper-button-prev:after {
     transform: rotate(180deg);
@@ -114,6 +115,19 @@ main{
   background-color: var(--light-purple);
   color: var(--background-blue);
   font-size: 12px;
+  z-index: 100;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+}
+
+.swiper-container-vertical > .swiper-pagination {
+  right: 10px;
+  top: 50%;
+  -moz-transform: translate3d(0px, -50%, 1px);
+  -webkit-transform: translate3d(0px, -50%, 1px);
+  transform: translate3d(0px, -50%, 1px);
 }
 
 @media (max-width: 500px){
