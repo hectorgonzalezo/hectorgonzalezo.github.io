@@ -85,11 +85,11 @@ function Projects() {
             </SwiperSlide>
             <SwiperSlide>
               <ProjectDisplay
-                img={battleshipGif}
-                name="Battleship Game"
-                stack={['JavaScript', 'Jest', 'Webpack']}
-                liveUrl="https://hectorgonzalezo.github.io/battleship/"
-                repoUrl="https://github.com/hectorgonzalezo/battleship"
+                img={waldoGif}
+                name="Photo Tagging Game"
+                stack={['React']}
+                liveUrl="https://tagging-game.netlify.app/"
+                repoUrl="https://github.com/hectorgonzalezo/tagging-game"
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -103,20 +103,20 @@ function Projects() {
             </SwiperSlide>
             <SwiperSlide>
               <ProjectDisplay
-                img={waldoGif}
-                name="Photo Tagging Game"
-                stack={['React']}
-                liveUrl="https://hectorgonzalezo.github.io/tagging-game/"
-                repoUrl="https://github.com/hectorgonzalezo/tagging-game"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProjectDisplay
                 img={memoryGif}
                 name="Memory Card Game"
                 stack={['React', 'Jest']}
                 liveUrl="https://hectorgonzalezo.github.io/memory-card/"
                 repoUrl="https://github.com/hectorgonzalezo/memory-card"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProjectDisplay
+                img={battleshipGif}
+                name="Battleship Game"
+                stack={['JavaScript', 'Jest', 'Webpack']}
+                liveUrl="https://hectorgonzalezo.github.io/battleship/"
+                repoUrl="https://github.com/hectorgonzalezo/battleship"
               />
             </SwiperSlide>
             <SwiperSlide>
