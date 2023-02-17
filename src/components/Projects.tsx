@@ -85,15 +85,6 @@ function Projects() {
             </SwiperSlide>
             <SwiperSlide>
               <ProjectDisplay
-                img={waldoGif}
-                name="Photo Tagging Game"
-                stack={['React']}
-                liveUrl="https://tagging-game.netlify.app/"
-                repoUrl="https://github.com/hectorgonzalezo/tagging-game"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProjectDisplay
                 img={storeGif}
                 name="Shopping Cart App"
                 stack={['React', 'Jest']}
@@ -126,6 +117,15 @@ function Projects() {
                 stack={['JavaScript', 'Webpack']}
                 liveUrl="https://hectorgonzalezo.github.io/tic-tac-toe/"
                 repoUrl="https://github.com/hectorgonzalezo/tic-tac-toe"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProjectDisplay
+                img={waldoGif}
+                name="Photo Tagging Game"
+                stack={['React', 'TypeScript', 'Node', 'Express', 'MongoDB', 'Jest']}
+                liveUrl="https://tagging-game.netlify.app/"
+                repoUrl="https://github.com/hectorgonzalezo/tagging-game"
               />
             </SwiperSlide>
           </Swiper>
