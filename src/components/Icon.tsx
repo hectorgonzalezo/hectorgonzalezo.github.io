@@ -45,7 +45,7 @@ const Wrapper = styled.div`
 
   &:hover .tooltip,
   .tooltip:hover {
-    top: -15px;
+    top: -2em;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;

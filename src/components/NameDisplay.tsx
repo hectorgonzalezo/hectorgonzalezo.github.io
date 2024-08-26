@@ -14,7 +14,7 @@ function NameDisplay() {
       {visible ? (
         <>
           <h1>Héctor González Orozco</h1>
-          <h2>Full stack web developer</h2>
+          <h2>Full stack developer</h2>
           <Button text="Get to know me ↓" href="#about-me" />
         </>
       ) : null}

@@ -118,6 +118,12 @@ function AboutMe() {
                     alt="Redux"
                   />
                 </Icon>
+                <Icon text="Django">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg"
+                    alt="Django"
+                  />
+                </Icon>
                 <Icon text="Node">
                   <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"
@@ -131,18 +137,19 @@ function AboutMe() {
                     alt="Express"
                   />
                 </Icon>
+                <Icon text="PostgreSQL">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                    alt="postgreSQL"
+                  />
+                </Icon>
                 <Icon text="MongoDB">
                   <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
                     alt="MongoDb"
                   />
                 </Icon>
-                <Icon text="Jest">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg"
-                    alt="Jest"
-                  />
-                </Icon>
+
               </li>
             </ul>
           </div>
