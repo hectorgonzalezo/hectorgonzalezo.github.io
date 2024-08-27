@@ -1,7 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
+interface WrapperProps {
+  topOffset?: string;
+}
+
+const Wrapper = styled.div<WrapperProps>`
   position: relative;
   padding: 25px;
   width: clamp(10px, 2vw, 40px);
@@ -45,7 +49,8 @@ const Wrapper = styled.div`
 
   &:hover .tooltip,
   .tooltip:hover {
-    top: -2em;
+    top: ${(props: WrapperProps) => props.topOffset};
+    // top: -2em;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -64,11 +69,12 @@ const Wrapper = styled.div`
 interface IconProps {
   children: React.ReactNode;
   text: string;
+  big?: boolean;
 }
 
-function Icon({ children, text } : IconProps) {
+function Icon({ children, text, big = false} : IconProps) {
   return (
-    <Wrapper className="icon">
+    <Wrapper className="icon" topOffset={big ? '-1rem' : '-2rem'}>
       <span className="tooltip">{text}</span>
       <span>{children}</span>
     </Wrapper>

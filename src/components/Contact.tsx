@@ -16,17 +16,17 @@ function Contact() {
         <>
         <h1>Contact</h1>
         <div>
-        <Icon text="hectorgonzalezo">
+        <Icon text="hectorgonzalezo" big>
           <a href="https://github.com/hectorgonzalezo">
             <img src={githubLogo} alt="Github" />
           </a>
         </Icon>
-        <Icon text="hgonzalez@wesleyan.edu">
+        <Icon text="hgonzalez@wesleyan.edu" big>
           <a href="mailto:hgonzalez@wesleyan.edu">
             <img src={emailLogo} alt="Email" />
           </a>
         </Icon>
-        <Icon text="Héctor González Orozco">
+        <Icon text="Héctor González Orozco" big>
           <a href="https://www.linkedin.com/in/hector-gonzalez-orozco/">
             <img src={linkedinLogo} alt="LinkedIn" />
           </a>
