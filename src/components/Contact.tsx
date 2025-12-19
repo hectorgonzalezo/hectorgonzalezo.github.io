@@ -21,8 +21,8 @@ function Contact() {
             <img src={githubLogo} alt="Github" />
           </a>
         </Icon>
-        <Icon text="hgonzalez@wesleyan.edu" big>
-          <a href="mailto:hgonzalez@wesleyan.edu">
+        <Icon text="gorozco.hector@gmail.com" big>
+          <a href="mailto:gorozco.hector@gmail.com">
             <img src={emailLogo} alt="Email" />
           </a>
         </Icon>
